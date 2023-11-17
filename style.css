@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR */
+
+
+body{
+    background-color: bisque;
+    background-image: url('back1.jpg');
+    background-size: 1536px 795px;
+
+
+}
+nav ul{
+    cursor: pointer;
+    font-family: 'Heebo', sans-serif;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.692);
+    color: white;
+    list-style-type: none;
+    height: 6vh;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+nav ul li{
+    padding: 70px;
+}
+.logo img{
+    height: 40px;
+    width: 75px;    
+}
+.btn{
+    text-decoration: none;
+}
+
+
+/* MIDDLECONTAINER */
+
+
+
+.container{
+    width: 80vw;
+    margin: 1 auto 1 auto; 
+    background-color: rgb(56, 155, 201);
+    margin-bottom: 10;
+    background-image: url('back3.jpg');
+    background-size: 1536px 795px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+.list{
+    margin: 15 0 0 65;
+    font-size: 17px;
+    width: 35vw;
+}
+.list h1{
+    margin: 0 0 50 0;
+    color: white;
+}
+.songItem img{
+    justify-content: center;
+    height: 35px;
+    width: 50px; 
+    border-radius: 34px;
+    margin: 0 0 0 30;
+
+}
+.fa-circle-play{
+    margin: 0 20 0 0;
+}
+.songItem{
+    margin: 15 0 25 0;
+    height: 40px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.788);
+    color: white;
+    align-items: center;
+    justify-content:space-between;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+.songItem:hover {
+    transform: scale(1.1); /* (10% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+/* .timeStamp{
+    margin: 0 0 0 40;
+} */
+.fa-regular{
+    cursor: pointer;
+}
+
+.container{
+    min-height: 84vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+/* PROGRESSBAR */
+
+
+
+.bottom{
+    background-color: rgba(0, 0, 0, 0.74);
+    color: white;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons{
+    margin: 9;
+    cursor: pointer;
+}
+.icons i{
+    margin: 2 15 0 0;
+}
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+.info{
+    position: absolute;
+    left: 10vw;
+    display: flex;
+    align-items: center;
+    margin: 20 0 0 0;
+    font-family: 'Heebo', sans-serif;
+    font-size: 18px;
+}
+.info img{
+    width: 130px;
+    height: 35px;
+    margin: 0 30 0 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+/* ABOUT PAGE */
+.about{
+    /* display: flex; */
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    
+}
+.btn{
+    color: white;
+}
+
+/* VOLUME SLIDER */
